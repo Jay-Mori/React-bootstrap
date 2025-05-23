@@ -1,0 +1,97 @@
+.carousel-control-prev{
+    color: black;
+    background-color: aqua;
+}
+
+/* Card Group Container */
+.card-group {
+  margin: 20px 0;
+  gap: 20px; /* Space between cards */
+}
+
+/* Individual Card Styling */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  overflow: hidden; /* Ensures rounded corners work with child elements */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card-img-top {
+  height: 120px;
+  object-fit: contain; /* Ensures logos look good */
+  padding: 15px;
+  background-color: #f8f9fa; /* Light gray background for logos */
+  border-bottom: 1px solid #eee;
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Card Footer */
+.card-footer {
+  background-color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 12px 20px;
+}
+
+.text-muted {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+/* Stock Price Highlight - you can add this class to price elements */
+.stock-price {
+  font-weight: bold;
+  color: #28a745; /* Green color for stock price */
+}
+
+.stock-market-cap {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.card.gain { border-top: 4px solid #28a745; }
+.card.loss { border-top: 4px solid #dc3545; }
+.card.neutral { border-top: 4px solid #ffc107; }@media (max-width: 768px) {
+  .card-group {
+    flex-direction: column;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+}@media (max-width: 768px) {
+  .card-group {
+    flex-direction: column;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  border-radius: 10px !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
